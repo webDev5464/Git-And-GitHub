@@ -1,16 +1,52 @@
-# Git Command's
+# 🎓  Git Command's
 
-## install git 
-[![AGPL License](https://img.shields.io/badge/Site-Git_Download-red.svg)](https://git-scm.com/downloads)
+- [install git](https://git-scm.com/downloads)
+- [Create account in GitHub](https://github.com)
 
-## init
+## 📌 Create Repositories
+
+- click new button end create repositories.
+- write repositories name.
+
+![create-repositories](created-repo.png)
+
+## 📌 Clone
+
+- Go to desktop end git terminal.
+
+```
+git clone https://github.com/<username>/<repositories name>.git
+```
+
+```
+cd demo
+```
+
+- change something.
+
+```
+git add <dir end file name>
+```
+
+```
+git commit -m "first message"
+```
+
+```
+git push
+```
+
+- Open GitHub end check repositories.
+
+
+## 📌 init
 
 ```cmd
 git init
 ```
 For Create new empty repository repo.
 
-## status
+## 📌 status
 
 ```cmd
 git status
@@ -27,7 +63,7 @@ git status -s
 
 easy reed result.
 
-#### How to chack git status ?
+#### 🔺 How to chack git status ?
 
 *create new file end check git status*
 
@@ -35,7 +71,7 @@ easy reed result.
 - `modified` : change somthing in this file end update to be 
 committed.
 
-## add
+## 🔺 add
 
 ```cmd
 git add
@@ -43,19 +79,19 @@ git add
 
 untracked file add to tracked *ready for commited.*
 
-### add all untracked file 
+### 🔺 add all untracked file 
 ```cmd
 git add -A
 ```
 new file, modified file & untracked *all types* add to commit.
 
-### add specific file
+### 🔺 add specific file
 ```cmd
 git add demo.html
 ```
 *this command for* : modified file, new file.
 
-## commit
+## 🔺 commit
 
 ```cmd
 git commit
@@ -120,13 +156,13 @@ your git commit is committed. ✅
 git commit -m "Add all files"
 ```
 
-#### How to add also commit end commited message only one command ?
+#### 🔺 How to add also commit end commited message only one command ?
 
 ```terminal
 git commit -a -m "All file add end commited"
 ```
 
-## checkout
+## 🔺 checkout
 ```terminal
 git checkout
 ``` 
@@ -141,13 +177,13 @@ git checkout index.html
 -> Remove modifided changes.
 -> Reset last `add` and `commit` changes.
 
-#### How to checkout all modifided files ?
+#### 🔺 How to checkout all modifided files ?
 
 ```terminal
 git checkout -f
 ```
 
-## log
+## 🔺 log
 
 ```terminal
 git log
@@ -155,7 +191,7 @@ git log
 
 Check commit history
 
-#### log filter
+#### 🔺 log filter
 
 ```terminal
 git log -p
@@ -169,7 +205,7 @@ git log -p -3
 
 `-3` -> 3 commit history show with changes.
 
-## diff
+## 🔺 diff
 
 This command only use working directory. If any changes in file end `add`, `commit` than not show any result.
 
@@ -189,7 +225,7 @@ git diff index.html
 git diff --staged
 ```
 
-## Cheack list all files in directory.
+## 🔺 Cheack list all files in directory.
 
 ```terminal
 ls
@@ -198,13 +234,21 @@ ls
 |:-|
 |contact.html, index.html,  information.txt,  README.md|
 
-## touch
+## 🔺 touch
 `touch demo.txt`
 
 For create new file.
 *(this command only support git terminal.)*
 
-## rm *(for remove file)*
+## 🔺 stash
+
+```
+git stash
+```
+
+modified change in only added file. before commit file dos not remove.
+
+## 🔺 rm *(for remove file)*
 
 ```terminal
 git rm --cached demo.txt
@@ -218,14 +262,14 @@ rm demo.html
 
 delete in directory.
 
-## .gitignore file
+## 🔺 .gitignore file
 
 - create `.gitignore` file 
 ```cmd
 touch .gitignore
 ```
 
-#### What is .gitignore file ?
+#### 🔺 What is .gitignore file ?
 | Ignore File end Folder | Meaning |
 |:-|:-|
 | demo.html | Not add this file in perent folder. |
@@ -233,7 +277,7 @@ touch .gitignore
 | *.txt | ignore all txt file's |
 | demo/ | ignore directory *folder* |
 
-## branch
+## 🔺 branch
 
 - `master` :- the master branch is by defult created branch & main branch. Every final work in this branch commit end push.
 
@@ -242,7 +286,7 @@ touch .gitignore
 git branch
 ```
 
-#### How to create new branch ?
+#### 🔺 How to create new branch ?
 
 ```cmd
 git branch DemoBranch
@@ -261,7 +305,7 @@ git branch
 
 `* master` selected branch
 
-#### Switch branch
+#### 🔺 Switch branch
 
 ```cmd
 git checkout DemoBranch
@@ -272,19 +316,21 @@ git checkout DemoBranch
 |  master |
 | * DemoBranch |
 
-#### Whay use branches ?
+#### 🔺 Whay use branches ?
 
 **(1)** : Some changes anything in `DemoBranch` end commit beffore cheack status.
 
 **(2)** : Switch `master` branch. not change here in *master* branch.
 
-#### How to merge another branch with main branch ?
+#### 🔺 How to merge another branch with main branch ?
 
 **(1)** : if you are in `anotherBranch` go to `master` branch.
 
 ```cmd
 git merge DemoBranch
 ```
+
+## 📌
 
 ***
 [![Make Perfect README.md file](https://img.shields.io/badge/Site-readme.so-red.svg)](https://readme.so/) [![Learn : Next Js Documentation](https://img.shields.io/badge/LEARN-Next_js-emreld.svg)](https://github.com/badshah5464/Next_Js-README.git) [![Learn : JavaScript Basic](https://img.shields.io/badge/LEARN-JavaScript_Basic-emreld.svg)](https://github.com/badshah5464/JavaScript-README.git)
