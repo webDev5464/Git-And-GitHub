@@ -330,8 +330,6 @@ git checkout DemoBranch
 git merge DemoBranch
 ```
 
-## 📌
-
 ***
 [![Make Perfect README.md file](https://img.shields.io/badge/Site-readme.so-red.svg)](https://readme.so/) [![Learn : Next Js Documentation](https://img.shields.io/badge/LEARN-Next_js-emreld.svg)](https://github.com/badshah5464/Next_Js-README.git) [![Learn : JavaScript Basic](https://img.shields.io/badge/LEARN-JavaScript_Basic-emreld.svg)](https://github.com/badshah5464/JavaScript-README.git)
 ***
